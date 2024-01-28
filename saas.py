@@ -35,10 +35,10 @@ def config_personas():
         name="Admin",
         system_message="A human admin. Interact with the planner to discuss the plan. "
                        "Plan execution needs to be approved by this admin.",
-        code_execution_config=False,
         max_consecutive_auto_reply=10,
         llm_config=llm_config,
-        human_input_mode="NEVER"
+        human_input_mode="NEVER",
+		code_execution_config=False
     )
 
     engineer = AssistantAgent(

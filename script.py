@@ -36,7 +36,8 @@ def config_personas():
         system_message="A human admin.",
         max_consecutive_auto_reply=10,
         llm_config=llm_config,
-        human_input_mode="NEVER"
+        human_input_mode="NEVER",
+		code_execution_config=False
     )
 
     content_creator = AssistantAgent(
